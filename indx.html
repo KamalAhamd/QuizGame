@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Quiz Game</h1>
+    </div>
+    <div id="container">
+      <!--  start  setcion ------ -->
+
+      <div id="start">Start Quiz</div>
+
+      <!--   Guide Sectuon  -->
+
+      <div id="guide">
+        <h2>Quiz Guide</h2>
+        <h4>1. You have only 20 seconds for each Question</h4>
+        <h4>2. Once u select Your Question , It Can't be Undone</h4>
+        <h4>3. You Will Get Points on the Basis of Your Correct Answer</h4>
+        <h4>4. You Can't Exit From Quiz Once u Start Playing</h4>
+        <div id="button">
+          <button id="exit">Exit</button>
+          <button id="continue">Continue</button>
+        </div>
+      </div>
+
+      <!--     Quiz  Sectiuon ------- -->
+      <div id="quiz">
+        <div id="quiz_header">
+          <h5>Amazing Quiz App</h5>
+          <div id="timer">
+            <h6>Time Left</h6>
+            <h6 id="time">00</h6>
+          </div>
+        </div>
+        <!--  quiz question ----- -->
+        <div id="question">
+          <h2 id="questionNo"></h2>
+          <h2 id="questionText"></h2>
+        </div>
+
+        <div id="optionList">
+          <h4 class="choice_que" id="option1"></h4>
+          <h4 class="choice_que" id="option2"></h4>
+          <h4 class="choice_que" id="option3"></h4>
+          <h4 class="choice_que" id="option4"></h4>
+        </div>
+
+        <div id="answerSection">
+          <h3 id="total_correct"></h3>
+          <h3 id="next_question">Next</h3>
+        </div>
+      </div>
+
+      <!-- Rsult Section ------ -->
+      <div id="result">
+        <i class="fa-solid fa-trophy"></i>
+        <h6>You Are Completed The Quiz</h6>
+        <h6 id="points">You Got 4 Out of 10</h6>
+        <button id="quit">Exit Quiz</button>
+        <button id="playAgain">Play Again</button>
+      </div>
+    </div>
+    <script src="indx.js"></script>
+  </body>
+</html>
